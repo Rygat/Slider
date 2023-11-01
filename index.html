@@ -4,7 +4,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div x-data="slider({ itemShow:'1' })">
+    <div x-data="slider({ itemShow:'1', autoSlide:'5000' })">
   <div x-ref="viewport" class="w-2/5 container border-2 rounded mx-auto m-5 bg-gray-200">
     <div class="flex p-4 pb-0 text-3xl">
       <svg @click="prev()" class="w-7 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path action="prev" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>

@@ -38,10 +38,10 @@ document.addEventListener("alpine:init", () => {
         this.drow('start');
         this.offset = i+1;
       }
-      if (this.autoSlide == true){
+      if (this.autoSlide){
       setInterval(() => {
         this.next()
-        }, 5000);
+        }, this.autoSlide);
       }
     },
     next() {
